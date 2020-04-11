@@ -4,7 +4,7 @@ import { List, Item } from "./styles";
 
 export default function Specialties() {
   return (
-    <Wrapper>
+    <Wrapper id="speciliaties">
       <h2>Especialidades</h2>
       <Row>
         <Col2>

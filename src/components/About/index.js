@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function About() {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <h2>Desenvolvedor Full Stack</h2>
       <address>
         <FaMapMarkerAlt size={13} color="#2b292d" /> Ribeirão Preto - SP, Brasil

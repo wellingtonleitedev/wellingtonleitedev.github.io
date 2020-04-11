@@ -8,7 +8,6 @@ export const Wrapper = styled.section`
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   left: 25px;
   padding: 20px;
   position: fixed;
@@ -50,3 +49,11 @@ export const Item = styled.li`
     margin-right: 5px;
   }
 `;
+
+export const Nav = styled.nav`
+  svg {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+`;
+

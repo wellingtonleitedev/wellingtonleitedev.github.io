@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Title, List, Item, Header, Image } from "./styles";
+import { Wrapper, Title, List, Item, Header, Image, Nav } from "./styles";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export default function NavBar() {
@@ -23,6 +23,14 @@ export default function NavBar() {
           </Item>
         </List>
       </Header>
+      <Nav>
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#speciliaties">Habilidades</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#certifications">Certificados</a></li>
+        </ul>
+      </Nav>
     </Wrapper>
   );
 }

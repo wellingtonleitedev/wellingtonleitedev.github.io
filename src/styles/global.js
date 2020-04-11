@@ -15,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a, a:hover {
-    color: inherit
+    color: inherit;
+    text-decoration: none;
   }
 
   li {
