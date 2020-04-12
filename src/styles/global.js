@@ -10,8 +10,12 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #f5f5f5;
-    color: #2b292d;
+    color: #000000a7;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif
+  }
+
+  h2 {
+    color: #283e4a;
   }
 
   a, a:hover {

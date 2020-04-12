@@ -10,16 +10,24 @@ export default function NavBar() {
         <Title>Wellington Leite</Title>
         <List>
           <Item>
-            <FaLinkedin size={15} color="#fff" />
+            <a href="https://www.linkedin.com/in/wellington-leite/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={15} color="#fff" />
+            </a>
           </Item>
           <Item>
-            <FaInstagram size={15} color="#fff" />
+            <a href="https://www.instagram.com/wellington_dev/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={15} color="#fff" />
+            </a>
           </Item>
           <Item>
-            <FaEnvelope size={15} color="#fff" />
+            <a href="mailto:wellingtonleitee.s@gmail.com" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope size={15} color="#fff" />
+            </a>
           </Item>
           <Item>
-            <FaGithub size={15} color="#fff" />
+            <a href="http://www.github.com/wellios" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={15} color="#fff" />
+            </a>
           </Item>
         </List>
       </Header>

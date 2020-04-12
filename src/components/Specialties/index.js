@@ -5,7 +5,7 @@ import { List, Item } from "./styles";
 export default function Specialties() {
   return (
     <Wrapper id="speciliaties">
-      <h2>Especialidades</h2>
+      <h2>Competências</h2>
       <Row>
         <Col2>
           <h3>Desenvolvimento Back-end</h3>
@@ -19,6 +19,7 @@ export default function Specialties() {
           <List>
             <Item>ReactJS</Item>
             <Item>Javascript</Item>
+            <Item>Jquery</Item>
           </List>
         </Col2>
       </Row>
