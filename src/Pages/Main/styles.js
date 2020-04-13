@@ -11,6 +11,10 @@ export const Content = styled.main`
   flex-direction: column;
   justify-content: flex-start;
   padding: 40px 20px 20px 290px;
+
+  @media screen and (max-width: 767px) {  
+    padding: 20px;
+  }
 `;
 
 export const SideNavBar = styled.aside``;
