@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Row, Col, Col2 } from "../../styles/global";
+import { Wrapper, Row, Col } from "../../styles/global";
 import { List, Item, Group } from "./styles";
 import { FaCogs, FaPencilRuler, FaMobileAlt, FaDatabase } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ export default function Specialties() {
     <Wrapper id="speciliaties">
       <h2>Competências</h2>
       <Row>
-        <Col2>
+        <Col>
           <Group>
             <FaCogs size={40} color="#000000a1" />
             <div>
@@ -19,8 +19,8 @@ export default function Specialties() {
               </List>
             </div>
           </Group>
-        </Col2>
-        <Col2>
+        </Col>
+        <Col>
           <Group>
             <FaPencilRuler size={40} color="#000000a1" />
             <div>
@@ -32,10 +32,10 @@ export default function Specialties() {
               </List>
             </div>
           </Group>
-        </Col2>
+        </Col>
       </Row>
       <Row>
-        <Col2>
+        <Col>
           <Group>
             <FaMobileAlt size={40} color="#000000a1" />
             <div>
@@ -45,8 +45,8 @@ export default function Specialties() {
               </List>
             </div>
           </Group>
-        </Col2>
-        <Col2>
+        </Col>
+        <Col>
           <Group>
             <FaDatabase size={40} color="#000000a1" />
             <div>
@@ -58,7 +58,7 @@ export default function Specialties() {
               </List>
             </div>
           </Group>
-        </Col2>
+        </Col>
       </Row>
       <Row>
         <Col>

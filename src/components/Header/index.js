@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaMapMarkerAlt, FaBirthdayCake, FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
-import { OpenMenu, CloseMenu, Brand, HeaderWrapper, AsideWrapper, Title, Article, List, Item, Image, Nav } from "./styles";
+import { OpenMenu, CloseMenu, Brand, HeaderWrapper, AsideWrapper, Article, List, Item, Image, Nav } from "./styles";
 
 export default function Header() {
     const [openMenu, setOpenMenu] = useState(false);
@@ -11,7 +11,7 @@ export default function Header() {
                 <OpenMenu open={openMenu} onClick={() => setOpenMenu(!openMenu)} size={20} color="#FFF" />
                 <Brand open={openMenu}>
                     <Image />
-                    <Title>Wellington Leite</Title>
+                    <h1>Wellington Leite</h1>
                     <List>
                         <Item>
                             <a href="https://www.linkedin.com/in/wellington-leite/" target="_blank" rel="noopener noreferrer">
@@ -35,7 +35,7 @@ export default function Header() {
                         </Item>
                     </List>
                 </Brand>
-                <Title>Desenvolvedor Full Stack</Title>
+                <h1>Desenvolvedor Full Stack</h1>
                 <p><FaBirthdayCake size={15} color="#000000a7" /> 24 anos</p>
                 <address>
                     <FaMapMarkerAlt size={15} color="#000000a7" /> Ribeirão Preto - SP, Brasil
@@ -51,7 +51,7 @@ export default function Header() {
                 <CloseMenu onClick={() => setOpenMenu(!openMenu)} size={20} color="#FFF" />
                 <header>
                     <Image />
-                    <Title>Wellington Leite</Title>
+                    <h1>Wellington Leite</h1>
                     <List>
                         <Item>
                             <a href="https://www.linkedin.com/in/wellington-leite/" target="_blank" rel="noopener noreferrer">

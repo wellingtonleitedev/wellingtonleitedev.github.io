@@ -41,9 +41,12 @@ export const CloseMenu = styled(FaTimes)`
 export const Brand = styled.div`
   align-items: center;
   align-self: center;
+  border-bottom: 1px solid #000000a1;
   display: ${props => props.open ? 'none' : 'flex'};
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {  
     display: none;
@@ -68,9 +71,10 @@ export const AsideWrapper = styled.aside`
 
   header {
     align-items: center;
+    border-bottom: 1px solid #000000a1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   
   @media screen and (max-width: 767px) {  
@@ -87,10 +91,6 @@ export const Image = styled.div`
   margin-bottom: 20px;
   width: 200px;
 `;
-
-export const Title = styled.h1``;
-
-export const Subtitle = styled.h3``;
 
 export const List = styled.ul`
   li {

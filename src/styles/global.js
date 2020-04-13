@@ -40,23 +40,13 @@ export const Wrapper = styled.section`
 
 export const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin: 15px 0;
   width: 100%;
 `;
 
 export const Col = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
-`;
-
-export const Col2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-`;
-
-export const Col3 = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 33.333%;
 `;
