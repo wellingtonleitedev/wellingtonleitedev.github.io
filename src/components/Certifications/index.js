@@ -1,41 +1,100 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "antd/lib/modal/style/index.css";
 import { Wrapper } from "../../styles/global";
-import { List, Item } from "./styles";
+import { List, Item, Image } from "./styles";
+import { Modal } from "antd";
 
 export default function Certifications() {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [modalSettings, setModalSettings] = useState({
+    title: "",
+    src: "",
+    visible: false,
+  });
+
+  useEffect(() => {
+    setModalVisible(modalSettings.visible);
+  }, [modalSettings]);
+
+  function openModal(title, src, visible) {
+    setModalSettings({ title, src, visible });
+  }
+
   return (
     <Wrapper id="certifications">
       <h2>Certificações</h2>
       <List>
-        <Item>
-          <a href="https://cursos.alura.com.br/career/certificate/10c9871c-4df5-46f5-98c0-e835f7eff936" target="_blank" rel="noopener noreferrer" >
-            <h3>GoStack</h3>
-          </a>
+        <Item
+          onClick={() =>
+            openModal(
+              "Certificação GoStack",
+              "./certifications/gostack.jpg",
+              true
+            )
+          }
+        >
+          <h3>GoStack</h3>
           <p>Rocketseat</p>
           <small>Node.js, ReactJS e React Native</small>
         </Item>
-        <Item>
-          <a href="https://cursos.alura.com.br/certificate/3c65598e-933e-4fd7-853a-42cc61a129bb" target="_blank" rel="noopener noreferrer">
-            <h3>Algoritmos I: Selection, Insertion e Introdução a análise</h3>
-          </a>
+        <Item
+          onClick={() =>
+            openModal(
+              "Certificação de Algoritmos I",
+              "./certifications/algoritmos-01.jpg",
+              true
+            )
+          }
+        >
+          <h3>Algoritmos I: Selection, Insertion e Introdução a análise</h3>
           <p>Alura</p>
           <small>Java</small>
         </Item>
-        <Item>
-          <a href="https://cursos.alura.com.br/certificate/10c9871c-4df5-46f5-98c0-e835f7eff936" target="_blank" rel="noopener noreferrer">
-            <h3>Algoritmos II: MergeSort, QuickSort, Busca Binária e Análise de Algoritmo</h3>
-          </a>
+        <Item
+          onClick={() =>
+            openModal(
+              "Certificação de Algoritmos II",
+              "./certifications/algoritmos-02.jpg",
+              true
+            )
+          }
+        >
+          <h3>
+            Algoritmos II: MergeSort, QuickSort, Busca Binária e Análise de
+            Algoritmo
+          </h3>
           <p>Alura</p>
           <small>Java</small>
         </Item>
-        <Item>
-          <a href="https://cursos.alura.com.br/career/certificate/10c9871c-4df5-46f5-98c0-e835f7eff936" target="_blank" rel="noopener noreferrer">
-            <h3>Iniciante em Programação</h3>
-          </a>
+        <Item
+          onClick={() =>
+            openModal(
+              "Certificação de Iniciante em Programação",
+              "./certifications/iniciante.jpg",
+              true
+            )
+          }
+        >
+          <h3>Iniciante em Programação</h3>
           <p>Alura</p>
           <small>HTML5 e CSS3, Javascript, Lógica de Programação</small>
         </Item>
       </List>
-    </Wrapper >
+      <Modal
+        title={modalSettings.title}
+        centered
+        visible={modalVisible}
+        onCancel={() =>
+          setModalSettings({
+            visible: false,
+            title: "",
+            src: "",
+          })
+        }
+        footer={[]}
+      >
+        <Image src={modalSettings.src} alt={modalSettings.title} />
+      </Modal>
+    </Wrapper>
   );
 }
